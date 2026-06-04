@@ -508,9 +508,18 @@ elif page == "Uji Data Kustom":
         """, unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
+
+        MAX_FILE_SIZE_MB = 5
+        MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024
         
         # Fitur Upload File CSV
         uploaded_file = st.file_uploader("Unggah File Dataset (.csv)", type=["csv"])
+
+        if uploaded_file is not None:
+            if uploaded_file.size > MAX_FILE_SIZE_BYTES:
+                st.error(f"⚠️ File terlalu besar! Ukuran file Anda {uploaded_file.size / (1024*1024):.2f} MB. "
+                         f"Mohon unggah file dengan ukuran maksimal {MAX_FILE_SIZE_MB} MB.")
+                st.stop() # Menghentikan skrip jika file kebesaran
 
         predict_btn = st.button(
             "Jalankan Training & Prediksi Baru",
