@@ -189,7 +189,7 @@ header{visibility:hidden;}
 """, unsafe_allow_html=True)
 
 # Mengatur lokasi folder utama dan sub-folder
-BASE_DIR = r"C:/Users/evald/OneDrive/Documents/Skripsi"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "saved_model", "model")
 SCALER_DIR = os.path.join(BASE_DIR, "saved_model", "scaler")
 DATA_DIR = os.path.join(BASE_DIR, "Dataset")
