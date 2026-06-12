@@ -468,14 +468,28 @@ elif page == "Pengujian & Prediksi":
                 </div>
                 """, unsafe_allow_html=True)
 
-                fig1, ax1 = plt.subplots(figsize=(14, 5))
-                ax1.plot(y_true_h7, label='Harga Aktual H+7', color='black', alpha=0.5, linewidth=2)
-                ax1.plot(y_pred_h7, label='Harga Prediksi H+7', color='red', linestyle='--', linewidth=2)
-                ax1.set_title(f'Perbandingan Harga Aktual vs Prediksi H+7 {stock_selection}')
-                ax1.set_xlabel('Data Points (Test Set)')
-                ax1.set_ylabel('Harga Saham (Rp)')
-                ax1.legend()
-                ax1.grid(True, alpha=0.3)
+                test_dates_h7 = df['Tanggal'].iloc[split_idx + win + 6 : split_idx + win + 6 + len(y_pred_h7)].reset_index(drop=True)
+
+                fig1, ax1 = plt.subplots(figsize=(14, 6))
+                
+                # 2. Plotting dengan memasukkan variabel test_dates_h7 sebagai sumbu X
+                ax1.plot(test_dates_h7, y_true_h7, label='Harga Aktual Nominal H+7', color='black', alpha=0.5, linewidth=1.5)
+                ax1.plot(test_dates_h7, y_pred_h7, label='Harga Prediksi Nominal H+7', color='red', linestyle='--', linewidth=2)
+                
+                # 3. Mengatur Judul dan Label Sumbu
+                ax1.set_title(f'Perbandingan Harga Aktual vs Prediksi Nominal H+7 {stock_selection} (Huber Loss)\n', fontsize=14)
+                ax1.set_xlabel('Tanggal', fontsize=12)
+                ax1.set_ylabel('Harga Saham (Rp)', fontsize=12)
+                
+                # 4. MEMUTAR LABEL TANGGAL (Agar miring 45 derajat seperti gambar kiri)
+                ax1.tick_params(axis='x', rotation=45)
+                
+                ax1.legend(fontsize=10)
+                ax1.grid(True, linestyle='--', alpha=0.7)
+                
+                # 5. Memastikan space layout pas agar teks tanggal tidak terpotong bingkai bawah
+                fig1.tight_layout()
+                
                 st.pyplot(fig1, use_container_width=True)
                 plt.close(fig1)
 
