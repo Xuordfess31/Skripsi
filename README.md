@@ -154,7 +154,7 @@ Pendekatan ini menjunjung tinggi kepatuhan terhadap kebijakan Terms of Service /
 
 ## 📖 Manual Penggunaan
 
-Panduan penggunaan aplikasi tersedia pada dokumen **535220086_BukuManualProgram** yang disertakan bersama proyek.
+Panduan penggunaan aplikasi tersedia pada dokumen **535220086_BukuManualProgram.pdf** yang disertakan bersama proyek.
 
 ---
 
