@@ -74,6 +74,9 @@ Skripsi/
 │
 ├── app.py                      # Program utama antarmuka dashboard web Streamlit
 ├── LSTM-Attention.ipynb        # Notebook preprocessing, eksperimen pelatihan, dan plot metrik
+├── LSTM Biasa.ipynb
+├── Data Historis KLBF (Data Kustom).csv
+├── 535220086_BukuManualProgram.pdf      
 │
 ├── requirements.txt            # Daftar dependensi library Python yang dibutuhkan
 └── README.md                   # Dokumentasi panduan repositori
