@@ -167,8 +167,6 @@ Universitas Tarumanagara
 
 ## 📜 Lisensi
 
-Repository ini dibuat sebagai bagian dari penelitian skripsi dan dipublikasikan untuk keperluan akademik serta pembelajaran.Apabila menggunakan sebagian kode atau materi dari repository ini, harap mencantumkan atribusi kepada penulis.
-
 Repository ini dibuat sebagai bagian dari luaran penelitian akademik (Skripsi) dan dipublikasikan secara terbuka untuk tujuan pembelajaran serta riset implementasi kecerdasan buatan (Deep Learning) di sektor finansial.
 
 Apabila Anda mengutip, memodifikasi, atau menggunakan sebagian baris kode dari repositori ini, mohon cantumkan atribusi referensi kepada penulis asli. Segala bentuk prediksi nilai saham yang dihasilkan oleh sistem ini merupakan simulasi matematis murni berbasis probabilitas masa lalu, dan bukan merupakan rekomendasi mutlak maupun saran profesional untuk keputusan investasi riil di pasar modal.
