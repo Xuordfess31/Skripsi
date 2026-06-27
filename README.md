@@ -8,7 +8,7 @@ Aplikasi berbasis **Streamlit** (**PharmaPredict**) yang dikembangkan sebagai im
 
 Aplikasi ini juga dapat diakses langsung melalui browser tanpa perlu instalasi, melalui tautan berikut:
 
-🔗 [Tautan Aplikasi Streamlit Anda di Sini] *(Ganti dengan link deploy aplikasi Anda, misal: https://pharmapredict.streamlit.app)*
+🔗 https://skripsi-sistem-prediksi-harga-saham-farmasi.streamlit.app/
 
 Aplikasi di-hosting menggunakan **Streamlit Community Cloud (tingkat gratis)**, sehingga aplikasi akan otomatis masuk ke mode **sleep (hibernasi)** apabila tidak ada pengunjung selama beberapa waktu. Hal ini bertujuan untuk menghemat resource server pada platform tersebut, bukan karena aplikasi mengalami error.
 
